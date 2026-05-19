@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08111f" />
+  <meta name="description" content="Rasim Abdullayev — IT-oriented portfolio and CV" id="metaDescription" />
+  <title>Rasim Abdullayev — IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#home" aria-label="Rasim Abdullayev portfolio home">
+      <span class="brand-mark">RA</span>
+      <span class="brand-copy"><strong>Rasim Abdullayev</strong><small data-ui="brand_role">IT Portfolio · Data & Web Systems</small></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="navMenu" aria-label="Portfolio navigation">
+      <a href="#experience" data-ui="nav_exp">Experience</a>
+      <a href="#projects" data-ui="nav_projects">IT Projects</a>
+      <a href="#skills" data-ui="nav_skills">Skills</a>
+      <a href="#education" data-ui="nav_edu">Education</a>
+      <a href="#certificates" data-ui="nav_certs">Certificates</a>
+      <a href="#motivation" data-ui="nav_motivation">Motivation</a>
+      <a href="#contact" data-ui="nav_contact">Contact</a>
+    </nav>
+
+    <div class="language-switch" aria-label="Language switcher">
+      <button class="lang-btn active" type="button" data-lang="az">AZ</button>
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="ru">RU</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker" data-ui="hero_eyebrow">IT Portfolio · Analytics · Web Systems</p>
+          <h1 data-ui="hero_title">Rasim Abdullayev</h1>
+          <p class="lead" data-ui="hero_subtitle">IT-oriented portfolio | Baku, Azerbaijan</p>
+          <p class="hero-desc" data-ui="hero_desc"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-ui="hero_cta1">View projects</a>
+            <button class="btn btn-secondary" type="button" id="printBtn" data-ui="hero_cta2">Print CV</button>
+            <a class="btn btn-ghost" href="mailto:rasimabdullayev6@gmail.com" data-ui="hero_cta3">Contact</a>
+          </div>
+          <div class="stats" id="stats"></div>
+        </div>
+
+        <aside class="profile-shell reveal" aria-label="Profile summary">
+          <div class="profile-card">
+            <div class="profile-frame"><img src="assets/img/profile.jpg" alt="Rasim Abdullayev" /></div>
+            <div class="profile-meta">
+              <span class="pulse"></span>
+              <div><strong data-ui="status">ICTA · Analytics and Data Processing Unit</strong><small data-ui="available">Open to new IT opportunities</small></div>
+            </div>
+          </div>
+          <div class="terminal-card" aria-label="Portfolio status">
+            <div class="terminal-head"><span></span><span></span><span></span><strong data-ui="terminal_title">portfolio.system</strong></div>
+            <code><span data-ui="terminal_1"></span><br><span data-ui="terminal_2"></span><br><span data-ui="terminal_3"></span><br><span data-ui="terminal_4"></span></code>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_exp_label"></p><h2 data-ui="sec_exp_title"></h2><p data-ui="sec_exp_copy"></p></div>
+        <div class="timeline" id="experienceList"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_projects_label"></p><h2 data-ui="sec_projects_title"></h2><p data-ui="sec_projects_copy"></p></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_skills_label"></p><h2 data-ui="sec_skills_title"></h2><p data-ui="sec_skills_copy"></p></div>
+        <div class="skills-layout">
+          <div class="skill-grid" id="skillGrid"></div>
+          <div class="strength-card reveal"><h3 data-ui="soft_label"></h3><div class="pill-cloud" id="softList"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_edu_label"></p><h2 data-ui="sec_edu_title"></h2><p data-ui="sec_edu_copy"></p></div>
+        <div class="education-grid" id="educationGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_cert_label"></p><h2 data-ui="sec_cert_title"></h2><p data-ui="sec_cert_copy"></p></div>
+        <div class="cert-tools reveal">
+          <div class="filters" id="filters"></div>
+          <input class="search" id="certSearch" type="search" autocomplete="off" />
+        </div>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="motivation">
+      <div class="container">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_motivation_label"></p><h2 data-ui="sec_motivation_title"></h2><p data-ui="sec_motivation_copy"></p></div>
+        <article class="letter-card reveal">
+          <div id="letterText"></div>
+          <button class="btn btn-secondary" id="copyLetter" type="button" data-ui="copy_letter">Copy letter</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="section-head reveal"><p class="kicker" data-ui="sec_contact_label"></p><h2 data-ui="sec_contact_title"></h2><p data-ui="sec_contact_copy"></p></div>
+        <div class="contact-grid reveal" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rasim Abdullayev. <span data-ui="rights"></span></span>
+      <a href="#top" data-ui="top">Top</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
