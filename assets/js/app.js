@@ -8,9 +8,9 @@ const profile = {
         "ru": "Information and Communication Technologies Agency (ICTA)"
       },
       "period": {
-        "az": "06.04.2026 — Hazırda",
-        "en": "06 Apr 2026 — Present",
-        "ru": "06.04.2026 — настоящее время"
+        "az": "06.04.2026 — 26.05.2026",
+        "en": "06 Apr 2026 — 26.05.2026",
+        "ru": "06.04.2026 — 26.05.2026"
       },
       "role": {
         "az": "Təcrübəçi — Analytics and Data Processing Unit",
@@ -309,9 +309,9 @@ const profile = {
         "ru": "Бакалавриат — информационные технологии"
       },
       "period": {
-        "az": "2020 — Hazırda",
-        "en": "2020 — Present",
-        "ru": "2020 — по настоящее время"
+        "az": "2020 — 2026",
+        "en": "2020 — 2026",
+        "ru": "2020 — 2026"
       }
     },
     {
